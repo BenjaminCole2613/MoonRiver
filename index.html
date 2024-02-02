@@ -145,6 +145,11 @@ function create ()
     if (highscore === 4)
     {
         endGame = this.add.text(294, 212, 'YOU WON THE GAME!', { fontFamily: 'serif', fontSize: '78px', fill: '#D79232' });
+        
+    this.physics.pause();
+    
+    gameOver = true;
+        
     };
     
 }
